@@ -48,8 +48,25 @@
       </div>
       <div class="col left">
         <h2>Who We Are?</h2>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipi</h3>
-        <p>scing elit. Integer lorem lorem lorem lorem lor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lorem lorem lorem lor.iscing elit. Integer lorem lorem lorem lorem lor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem lorem lorem lorem lor.</p>
+        <h3></h3>
+        <p></p>
+        <img src="" class="image-swap">
+
+<select name="kitchen_color" id="kitchen_color" onchange="change_image()">
+    <option value="/static/imag1.jpg">Red</option>
+    <option value="/static/imag2.jpg">Black</option>
+    <option value="/static/imag3.jpg">White</option>
+
+</select>
+
+
+$(document).ready(function(){
+    $('.image-swap').attr("src",$('#kitchen_color').val());
+})
+
+function change_image(){
+    $('.image-swap').attr("src",$('#kitchen_color').val());
+}
       </div>
       <div class="col right">
         <h2>What We Do?</h2>
